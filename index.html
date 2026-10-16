@@ -403,6 +403,10 @@ body{-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none}
  body.drawer .side{display:flex!important;position:fixed;inset:0;z-index:80;height:auto;padding:calc(14px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));overflow-y:auto;-webkit-overflow-scrolling:touch;background:#080f1e}
  body.drawer .side .nl{min-height:48px;font-size:1rem}
  body.drawer .dclose{display:inline-flex;position:absolute;top:calc(12px + env(safe-area-inset-top));right:max(14px,env(safe-area-inset-right));z-index:2}
+ .apb{height:70px}
+}
+@media (max-width:700px),(max-height:500px) and (pointer:coarse){
+ body.pearson .top{display:none!important}
  /* Pearson-format exam, one-handed */
  body.pearson .pfbar{position:sticky;top:env(safe-area-inset-top);z-index:30;margin:0 -14px 12px;padding:8px 14px;background:#080f1e;border-bottom:1px solid var(--line);flex-wrap:nowrap;gap:8px}
  body.pearson .pfbar .chip,body.pearson .pfbar .timer{white-space:nowrap;font-size:.82rem}
@@ -417,7 +421,6 @@ body{-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none}
  body.pearson .pfq{margin-bottom:0;padding:18px 16px}
  .card{padding:18px 16px}
  body.pearson .opt{min-height:56px}
- .apb{height:70px}
 }
 @media (max-width:380px){h1{font-size:1.9rem;line-height:1.15}body.pearson #rv>.row .btn svg{display:none}}
 @media (max-height:500px) and (orientation:landscape){.apb{height:52px}.arpad{margin:-6px 0 10px}}
